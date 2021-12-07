@@ -15,4 +15,20 @@ public class Helper : MonoBehaviour
     {
         
     }
+
+    public static void SetVelocity(float xvelo, float yvelo, GameObject obj)
+    {
+        Rigidbody rb = obj.GetComponent<Rigidbody>();
+        rb.velocity = new Vector3(xvelo, yvelo, 0);
+    }
+
+
+
+
+
+
+
+
+
+
 }
